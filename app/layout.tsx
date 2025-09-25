@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "bellonimart",
-  description: "Arte y obras de mi abuela",
+  description: "Arte y obras de María Teresa Belloni",
 };
 
 export default function RootLayout({

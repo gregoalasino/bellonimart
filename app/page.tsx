@@ -2,9 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const featuredPaintings = [
-  { id: 1, src: '/images/16.jpg', alt: 'Obra destacada 1', title: 'Título de la obra 1' },
-  { id: 2, src: '/images/23.jpg', alt: 'Obra destacada 2', title: 'Título de la obra 2' },
-  { id: 3, src: '/images/30.jpg', alt: 'Obra destacada 3', title: 'Título de la obra 3' },
+  { id: 1, src: '/images/40.jpg', alt: 'Obra destacada 1', title: 'Hijo...' },
+  { id: 2, src: '/images/23.jpg', alt: 'Obra destacada 2', title: 'Construcción P 6' },
+  { id: 3, src: '/images/30.jpg', alt: 'Obra destacada 3', title: 'El último viaje' },
+  { id: 4, src: '/images/36.jpg', alt: 'Obra destacada 3', title: 'Tunel de la 14' },
+  { id: 5, src: '/images/11.jpg', alt: 'Obra destacada 3', title: 'Mariposa Madre' },
+  { id: 6, src: '/images/9.jpg', alt: 'Obra destacada 3', title: 'Ángel Azul' },
 ];
 
 export default function HomePage() {
@@ -24,6 +27,7 @@ export default function HomePage() {
       <h3 className="text-3xl font-bold text-gray-800 mb-8 mt-12">Obras Destacadas</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {featuredPaintings.map((painting) => (
+          <Link key={painting.id} href="/gallery">
           <div key={painting.id} className="relative group overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
             <Image
               src={painting.src}
@@ -36,11 +40,12 @@ export default function HomePage() {
               <p className="text-white text-lg font-bold">{painting.title}</p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
 
       <div className="mt-16">
-        <Link href="/gallery" className="bg-blue-600 text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-blue-700 transition duration-300 shadow-lg">
+        <Link href="/gallery" className="bg-gray-800 text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-900 transition duration-300 shadow-lg">
           Ver la Galería Completa
         </Link>
       </div>

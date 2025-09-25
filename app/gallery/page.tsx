@@ -6,11 +6,20 @@ import Image from 'next/image'; // Para la imagen dentro del modal
 
 // Aquí vas a poner la información real de las obras de tu abuela
 const paintings = [
-  { id: 1, src: '/images/16.jpg', alt: 'Bronce y piedra', title: '...de la opresión' },
   { id: 2, src: '/images/19.jpg', alt: 'Retrato de un niño', title: 'Construcción M-P 2' },
   { id: 3, src: '/images/30.jpg', alt: 'Naturaleza muerta con flores', title: 'El último viaje' },
   { id: 4, src: '/images/40.jpg', alt: 'Vista de la ciudad de noche', title: 'Hijo...' },
-  { id: 4, src: '/images/23.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 5, src: '/images/23.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 6, src: '/images/17.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 7, src: '/images/11.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 8, src: '/images/9.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 9, src: '/images/6.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 10, src: '/images/7.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 11, src: '/images/22.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 12, src: '/images/38.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 13, src: '/images/98.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 14, src: '/images/99.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
+  { id: 15, src: '/images/36.jpg', alt: 'Vista de la ciudad de noche', title: 'Construcción P 6' },
   // ¡Agrega todas las obras que necesites aquí!
   // { id: 5, src: '/images/50.jpg', alt: '...', title: '...' },
 ];

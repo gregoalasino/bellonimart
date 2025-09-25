@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
       <div className="flex-shrink-0">
         <Image
-          src="/images/perfil_abuela.jpg"
+          src="/images/7.jpg"
           alt="Foto de la artista"
           width={300}
           height={300}
