@@ -63,8 +63,11 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col items-center justify-center py-12 px-4 md:px-8">
       
-      {/* 1. BIOGRAFÍA INTRODUCTORIA (TEXTO ACTUALIZADO) */}
-      <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12 mb-12">
+      {/* 1. BIOGRAFÍA INTRODUCTORIA - FOTO Y TEXTO APILADOS Y CENTRADOS */}
+      {/* Se usa 'flex-col items-center' para mantener la foto arriba y el texto centrado debajo en TODAS las resoluciones. */}
+      <div className="flex flex-col items-center space-y-8 mb-12">
+        
+        {/* FOTO - Siempre centrada y arriba */}
         <div className="flex-shrink-0">
           <Image
             src="/images/7.jpg" 
@@ -74,10 +77,11 @@ export default function AboutPage() {
             className="rounded-full shadow-lg"
           />
         </div>
-        <div className="text-gray-700 max-w-prose text-center md:text-left">
+        
+        {/* TEXTO - Centrado debajo de la foto, usando un ancho máximo. */}
+        <div className="text-gray-700 max-w-3xl text-center"> 
           <h1 className="text-4xl font-bold mb-4 text-gray-800">Acerca de María Teresa Belloni</h1>
           
-          {/* INICIO DE TEXTO ACTUALIZADO */}
           <p className="mb-4 text-lg leading-relaxed">
             María Teresa Belloni, nacida en Córdoba, Argentina, es una artista plástica con una trayectoria que abarca más de cinco décadas. Su obra, profundamente arraigada en la escultura, pintura y joyas, explora la relación entre la materia, el espacio y la emoción. Desde sus inicios, ha forjado un lenguaje visual único, utilizando diversos materiales como el metal, la madera, la piedra, el bronce, plásticos, telas, luces, entre otros, para dar vida a formas que dialogan con el observador.
           </p>
@@ -87,13 +91,15 @@ export default function AboutPage() {
           <p className="text-lg leading-relaxed">
             Este espacio es un recorrido por su legado, una invitación a descubrir la fuerza y la delicadeza de su creación artística.
           </p>
-          {/* FIN DE TEXTO ACTUALIZADO */}
           
         </div>
       </div>
-
-      {/* 3. LÍNEA DE TIEMPO HISTÓRICA ("Momentos Clave") */}
-      <h2 className="text-4xl font-bold mb-10 text-gray-800 text-center">Recorrido</h2>
+      
+      {/* SECCIÓN DE CITAS (Si la necesitas, re-inclúyela aquí) */}
+      {/* NOTA: Las citas no estaban en tu último código, así que no las incluí por defecto. */}
+      
+      {/* 3. LÍNEA DE TIEMPO HISTÓRICA ("Recorrido") */}
+      <h2 className="text-4xl font-bold mb-10 mt-12 text-gray-800 text-center">Recorrido</h2>
       <div className="w-full max-w-4xl">
         {historyStages.map((stage, index) => (
           <HistoryItem
