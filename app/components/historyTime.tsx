@@ -44,14 +44,14 @@ const HistoryItem = ({ photos, year, description, reverse = false }: HistoryItem
               <>
                 <button
                   onClick={prevPhoto}
-                  className="absolute left-2 top-1/2 transform -translate-y-1/2 p-1 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition z-10"
+                  className="absolute left-2 top-1/2 transform -translate-y-1/2 p-1 bg-black bg-opacity-20 text-white rounded-full hover:bg-opacity-75 transition z-10"
                   aria-label="Foto anterior"
                 >
                   <ChevronLeft size={20} />
                 </button>
                 <button
                   onClick={nextPhoto}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition z-10"
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 bg-black bg-opacity-20 text-white rounded-full hover:bg-opacity-75 transition z-10"
                   aria-label="Foto siguiente"
                 >
                   <ChevronRight size={20} />
