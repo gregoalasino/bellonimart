@@ -24,7 +24,7 @@ export default function ContactPage() {
               Teléfono
             </h3>
             <p className="text-gray-700">
-              +54 9 351 123 4567
+              +54 9 351 665 4113
             </p>
           </div>
         </div>

@@ -39,7 +39,7 @@ const historyStages = [
   },
   {
     year: "Consolidación",
-    description: "Su obra, habiendo trascendido las fronteras, participando en bienales y muestras en distintos países. Continúa explorando nuevas dimensiones en su lenguaje artístico, siempre fiel a sus raíces.",
+    description: "Su obra, habiendo trascendido las fronteras, logró participar en bienales y muestras en distintos países. Continúa explorando nuevas dimensiones en su lenguaje artístico, siempre fiel a sus raíces.",
     photos: [
       "/images/2001-2010/Consolidación/2.jpg", 
       "/images/2001-2010/Consolidación/5.jpg",

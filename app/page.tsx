@@ -11,24 +11,66 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const featuredWorks = [
   {
     id: 1,
-    src: '/images/16.jpg',
-    title: 'Atardecer en el campo',
-    year: '1995',
-    text: '“Esta obra marca un punto de inflexión, capturando la melancolía del paisaje cordobés a través de la fusión de materia y color. Representa el inicio de mi etapa de experimentación con texturas.”',
+    src: '/images/obras_destacadas/Renault.jpeg',
+    title: 'Renault',
+    year: '1990',
+    text: '“Esta obra fue encargada por la empresa Renault en el año 1990. Realizada en el Museo del Automóvil.',
+  },
+  {
+    id: 9,
+    src: '/images/obras_destacadas/TercerMundo.jpeg',
+    title: 'Templo para el Tercer Mundo',
+    year: '',
+    text: 'Obra realizada en mármol de 4 metros en Carrara, Italia',
   },
   {
     id: 2,
-    src: '/images/29.jpg',
-    title: 'Inocencia en Bloque',
-    year: '2005',
-    text: '“Un estudio sobre la forma humana, utilizando el bloque áspero de la piedra para contrastar con la suavidad inherente a la infancia. Es un diálogo constante entre lo duro y lo sensible.”',
+    src: '/images/obras_destacadas/OlimpiadasBarcelona.jpeg',
+    title: 'Trofeo Olimpiadas Barcelona',
+    year: '1992',
+    text: 'Ésta obra fue seleccionada entre 5 finalistas para representar el trofeo de las Olimpiadas de 1992 en Barcelona, España',
   },
   {
     id: 3,
-    src: '/images/30.jpg',
-    title: 'Ramos de primavera',
-    year: '2015',
-    text: '“Mi regreso a la pintura después de años de escultura. Una explosión de color que celebra la vida y la fragilidad, buscando la ligereza en trazos rápidos y saturados.”',
+    src: '/images/obras_destacadas/SaludoAlSol.jpeg',
+    title: 'Saludo al sol',
+    year: '',
+    text: 'Obra con 8 metros de altura. Unión de dos árboles sobre granito, realizada en Austria',
+  },
+  {
+    id: 4,
+    src: '/images/obras_destacadas/PuntoDeEncuentro.jpeg',
+    title: 'Punto de encuentro',
+    year: '',
+    text: 'Obra con 10 metros de altura. Realizada en Alemania',
+  },
+  {
+    id: 5,
+    src: '/images/obras_destacadas/Maternidad.jpeg',
+    title: 'Maternidad',
+    year: '',
+    text: '" Luego de la pérdida de un ser querido, realicé esta obra simbolizando mi familia ". Obra con 6 metros de altura. Realizada en Austria',
+  },
+  {
+    id: 6,
+    src: '/images/obras_destacadas/Tunel14.jpeg',
+    title: 'Tunel de la 14',
+    year: '',
+    text: '" Elaboré el diseño artístico de un importante túnel de mi ciudad natal, tenía 190 metros de largo por 5 metros de altura. "',
+  },
+  {
+    id: 7,
+    src: '/images/obras_destacadas/HolidayInnPrize.jpeg',
+    title: 'Rojos',
+    year: '',
+    text: '" Contratada por el Hotel Holiday Inn, realicé ésta obra ante la visita de figuras internacionales muy importantes "',
+  },
+  {
+    id: 8,
+    src: '/images/obras_destacadas/OsdeReflexion.jpeg',
+    title: 'Reflexión',
+    year: '2009',
+    text: 'Ganadora del concurso. Osde realiza el móvil llamado "Reflexión" con 13 metros de altura.',
   },
 ];
 
@@ -36,7 +78,7 @@ const featuredWorks = [
 // DATOS: CITAS DE REFERENCIA
 // =======================================================
 const quoteBeinkofer = {
-  text: '... A menudo se afirma, que la naturaleza y el arte están en contraposición, pero seguramente ello no es cierto. Ambos se inspiran en las mismas profundidades. Esto queda especialmente de manifiesto al observar las obras de María Teresa Belloni, la cual extrae de la naturaleza los más variados materiales y les confiere nuevas dimensiones espirituales; casi podría decirse que descascara dichas dimensiones (de su elemento primario) Y ocurre así que uno se asombra y se admira cuando descubre lo que se esconde detrás de las cosas cotidianas, lo cual nunca habíamos imaginado. Esta artista posee la virtud, de lograr que nuestra visión se abra a nuevas relaciones y de conducirnos y movilizarnos a seguir pensando. No es ésta la más bella e importante misión del arte, que basándose en la vida misma llega a descubrir nuevas dimensiones, con lo cual nuestras vidas se tornan más comprensibles? A Maria Teresa Belloni debemos estarle gradecidos por ello…',
+  text: '... A menudo se afirma, que la naturaleza y el arte están en contraposición, pero seguramente ello no es cierto. Ambos se inspiran en las mismas profundidades. Esto queda especialmente de manifiesto al observar las obras de María Teresa Belloni, la cual extrae de la naturaleza los más variados materiales y les confiere nuevas dimensiones espirituales; casi podría decirse que descascara dichas dimensiones (de su elemento primario) Y ocurre así que uno se asombra y se admira cuando descubre lo que se esconde detrás de las cosas cotidianas, lo cual nunca habíamos imaginado. Esta artista posee la virtud, de lograr que nuestra visión se abra a nuevas relaciones y de conducirnos y movilizarnos a seguir pensando. No es ésta la más bella e importante misión del arte, que basándose en la vida misma llega a descubrir nuevas dimensiones, con lo cual nuestras vidas se tornan más comprensibles? A Maria Teresa Belloni debemos estarle agradecidos por ello…',
   author: 'Dr. Norbert Beinkofer',
 };
 
@@ -100,14 +142,14 @@ export default function HomePage() {
           {/* Botones de Navegación */}
           <button
             onClick={prevWork}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition z-10"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-20 text-white rounded-full hover:bg-opacity-75 transition z-10"
             aria-label="Obra Anterior"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             onClick={nextWork}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition z-10"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-20 text-white rounded-full hover:bg-opacity-75 transition z-10"
             aria-label="Obra Siguiente"
           >
             <ChevronRight size={24} />
@@ -142,11 +184,11 @@ export default function HomePage() {
       </div>
 
       {/* Botón de galería (Fuera del carrusel) */}
-      <div className="mt-16">
+      {/* <div className="mt-16">
         <Link href="/gallery" className="bg-gray-800 text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-900 transition duration-300 shadow-lg">
           Ver la Galería Completa
         </Link>
-      </div>
+      </div> */}
 
       {/* 2. CITAS - SEGUNDA CITA (García) - AÑADIDO TÍTULO */}
       <div className="max-w-4xl w-full mt-20 mb-8 px-4">
