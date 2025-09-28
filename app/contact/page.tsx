@@ -17,6 +17,7 @@ export default function ContactPage() {
             </h3>
             <p className="text-gray-700 break-words">
               bellonimart@hotmail.com
+              mariatbelloni@gmail.com
             </p>
           </div>
           <div className="text-left">
@@ -25,6 +26,17 @@ export default function ContactPage() {
             </h3>
             <p className="text-gray-700">
               +54 9 351 665 4113
+            </p>
+          </div>
+          <div className="text-left">
+             <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              Galería Dragón y Rosas - Arq. Marcattini
+            </h3>
+            <p className="text-gray-700">
+              gmarcattini@gmail.com
+            </p>
+            <p className="text-gray-700">
+              +54 9 351 386 7803
             </p>
           </div>
         </div>

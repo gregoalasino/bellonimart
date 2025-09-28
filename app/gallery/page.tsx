@@ -81,6 +81,14 @@ const paintings = [
   { id: 75, src: '/images/galeria/14.jpg', alt: 'Serie de La Opresión', title: 'Serie de La Opresión' },
   { id: 76, src: '/images/galeria/15.jpg', alt: 'Serie de La Opresión', title: 'Serie de La Opresión' },
   { id: 77, src: '/images/galeria/16.jpg', alt: 'Serie de La Opresión', title: 'Serie de La Opresión' },
+  { id: 78, src: '/images/galeria/21.jpg', alt: 'Construcciones', title: 'Construcción B-P 4' },
+  { id: 79, src: '/images/galeria/22.jpg', alt: 'Construcciones', title: 'Construcción P 5' },
+  { id: 80, src: '/images/galeria/23.jpg', alt: 'Construcciones', title: 'Construcción P 6' },
+  { id: 81, src: '/images/galeria/24.jpg', alt: 'Construcciones', title: 'Los Fantasmas del Abuelo' },
+  { id: 82, src: '/images/galeria/34.jpg', alt: 'Altar', title: 'El Altar' },
+  { id: 83, src: '/images/galeria/36.jpg', alt: 'Construcciones', title: 'Horizonte en Cusco' },
+  { id: 84, src: '/images/galeria/39.jpg', alt: 'Construcciones', title: 'Estallido' },
+  { id: 85, src: '/images/galeria/40.jpg', alt: 'Construcciones', title: 'Hijo...' },
 
   
 ];
@@ -116,6 +124,15 @@ export default function GalleryPage() {
             onClick={openModal} // Pasamos la función openModal
           />
         ))}
+      </div>
+      
+      <div className="max-w-4xl mx-auto mt-16 p-6 bg-gray-50 shadow-md">
+        <h3 className="text-xl font-bold text-gray-800 mb-2">
+          Nota sobre la Colección:
+        </h3>
+        <p className="text-base text-gray-700 leading-relaxed">
+          Esta selección fotográfica representa una muestra curada del vasto trabajo de la artista. Gran parte de las obras expuestas han sido adquiridas y forman parte de colecciones privadas y públicas en Argentina y el extranjero. Si bien esta galería web es un recorrido por las diferentes series, la producción completa de María Teresa Belloni es considerablemente más extensa que las piezas aquí mostradas. Para consultas sobre obras disponibles o la colección histórica, por favor, diríjase a la sección de Contacto.
+        </p>
       </div>
 
       {/* Modal para mostrar la imagen agrandada */}
