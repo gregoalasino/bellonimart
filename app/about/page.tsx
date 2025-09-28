@@ -80,7 +80,7 @@ export default function AboutPage() {
         
         {/* TEXTO - Centrado debajo de la foto, usando un ancho máximo. */}
         <div className="text-gray-700 max-w-3xl text-center"> 
-          <h1 className="text-4xl font-bold mb-4 text-gray-800">Acerca de María Teresa Belloni</h1>
+          {/* <h1 className="text-4xl font-bold mb-4 text-gray-800">Acerca de María Teresa Belloni</h1> */}
           
           <p className="mb-4 text-lg leading-relaxed">
             María Teresa Belloni, nacida en Córdoba, Argentina, es una artista plástica con una trayectoria que abarca más de cinco décadas. Su obra, profundamente arraigada en la escultura, pintura y joyas, explora la relación entre la materia, el espacio y la emoción. Desde sus inicios, ha forjado un lenguaje visual único, utilizando diversos materiales como el metal, la madera, la piedra, el bronce, plásticos, telas, luces, entre otros, para dar vida a formas que dialogan con el observador.

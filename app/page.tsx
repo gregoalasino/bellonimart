@@ -56,14 +56,14 @@ const featuredWorks = [
     src: '/images/obras_destacadas/Maternidad.jpeg',
     title: 'Maternidad',
     year: '1995',
-    text: 'Obra de 6 metros de altura realizada en madera policromada. Austria',
+    text: 'Obra de 6 metros realizada en madera policromada. Austria',
   },
   {
     id: 6,
     src: '/images/obras_destacadas/Tunel14.jpeg',
     title: 'Tunel de la 14',
     year: '1999',
-    text: '" Elaboré el diseño artístico de un importante túnel de mi ciudad natal, tenía 190 metros de largo por 5 metros de altura. "',
+    text: '" Elaboré el diseño artístico de un importante túnel de mi ciudad natal, tiene 190 metros de largo por 5 metros de altura. "',
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ const featuredWorks = [
     src: '/images/obras_destacadas/OsdeReflexion.jpeg',
     title: 'Reflexión',
     year: '2009',
-    text: 'Ganadora del concurso. Osde realiza el móvil llamado "Reflexión" con 13 metros de altura.',
+    text: 'Ganadora del concurso. Osde realiza el móvil llamado "Reflexión" de 13 metros de altura.',
   },
 ];
 
