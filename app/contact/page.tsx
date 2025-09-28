@@ -16,7 +16,7 @@ export default function ContactPage() {
               Correo Electrónico
             </h3>
             <p className="text-gray-700 break-words">
-              bellonimart@hotmail.com
+              bellonimart@hotmail.com -
               mariatbelloni@gmail.com
             </p>
           </div>
