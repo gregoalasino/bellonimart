@@ -17,18 +17,18 @@ const featuredWorks = [
     text: 'Maqueta para el aeropuerto Jorge Newbery. Quedó entre los finalistas en el concurso organizado por Aerolíneas Argentinas en 1981. El ganador fue Pollesello.',
   },
   {
-    id: 1,
-    src: '/images/obras_destacadas/Renault.jpeg',
-    title: 'Renault',
-    year: '1990',
-    text: 'Esta obra fue encargada por la empresa Renault en el año 1990 para el Museo del Automóvil.',
-  },
-  {
     id: 9,
     src: '/images/obras_destacadas/TercerMundo.jpeg',
     title: 'Templo para el Tercer Mundo',
     year: '1986',
     text: 'Obra realizada y emplazada en mármol de 4 metros en Carrara, Italia',
+  },
+  {
+    id: 1,
+    src: '/images/obras_destacadas/Renault.jpeg',
+    title: 'Renault',
+    year: '1990',
+    text: 'Esta obra fue encargada por la empresa Renault en el año 1990 para el Museo del Automóvil.',
   },
   {
     id: 2,
