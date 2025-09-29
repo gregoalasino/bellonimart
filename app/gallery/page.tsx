@@ -132,8 +132,18 @@ export default function GalleryPage() {
           Nota sobre la Colección:
         </h3>
         <p className="text-base text-gray-700 leading-relaxed">
-          Esta selección fotográfica representa una muestra curada del vasto trabajo de la artista. Gran parte de las obras expuestas han sido adquiridas y forman parte de colecciones privadas y públicas en Argentina y el extranjero. Si bien esta galería web es un recorrido por las diferentes series, la producción completa de María Teresa Belloni es considerablemente más extensa que las piezas aquí mostradas. Para consultas sobre obras disponibles o la colección histórica, por favor, diríjase a la sección de Contacto.
+          Esta selección fotográfica representa una muestra curada del vasto trabajo de la artista. Gran parte de las obras expuestas han sido adquiridas y forman parte de colecciones privadas y públicas en Argentina y el extranjero. Si bien esta galería web es un recorrido por las diferentes series, la producción completa de María Teresa Belloni es considerablemente más extensa que las piezas aquí mostradas. Para consultas sobre obras disponibles o la colección histórica, por favor, diríjase a la sección de Contacto. 
         </p>
+          <div>
+            <a 
+                href="https://drive.google.com/drive/folders/1Mup_3A4yTuowi2WBgMZCVNJd2phisMC7?usp=drive_link" 
+                target="_blank" // Abre el enlace en una nueva pestaña
+                rel="noopener noreferrer" // Mejora la seguridad y el rendimiento
+                className="text-blue-600 hover:text-blue-800 underline font-semibold" // Estilos Tailwind para enlaces
+            >
+                 Google Drive con biografía, esculturas, joyas y pinturas
+            </a>.
+          </div>
       </div>
 
       {/* Modal para mostrar la imagen agrandada */}
