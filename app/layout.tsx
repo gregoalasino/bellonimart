@@ -1,6 +1,7 @@
+// app/layout.tsx
 import "./globals.css";
-import Link from "next/link";
 import { Roboto } from 'next/font/google';
+import Navbar from './components/Navbar'; // 💡 IMPORTAMOS EL NUEVO COMPONENTE NAVBAR
 
 // Define la fuente con los estilos que necesites
 const primaryFont = Roboto({
@@ -22,18 +23,9 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${primaryFont.variable}`}>
       <body className="min-h-screen flex flex-col bg-gray-50 text-gray-800">
-        {/* Navbar */}
-        <header className="bg-white shadow-md">
-          <nav className="container mx-auto flex justify-between items-center p-4">
-            <h1 className="text-2xl font-bold">Portafolio</h1>
-            <div className="flex gap-4">
-              <Link href="/">Inicio</Link>
-              <Link href="/about">Biografía</Link>
-              <Link href="/gallery">Galería</Link>
-              <Link href="/contact">Contacto</Link>
-            </div>
-          </nav>
-        </header>
+        
+        {/* Navbar - Usamos el componente externo */}
+        <Navbar />
 
         {/* Contenido dinámico */}
         <main className="flex-grow container mx-auto p-6">{children}</main>
