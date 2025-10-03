@@ -8,7 +8,7 @@ import React from 'react';
 // Datos de contacto separados
 const artistaData = {
     title: "Contacto | María Teresa Belloni",
-    phone: "54 9 351 665 4113",
+    phone: "+54 9 351 665 4113",
     email1: "bellonimart@hotmail.com",
     email2: "mariatbelloni@gmail.com",
     bgImage: "/images/pinturas/2001/48.jpg", // Usa tu pintura rojiza (ejemplo: 48.jpg)
@@ -17,7 +17,8 @@ const artistaData = {
 
 const galeriaData = {
     title: "Galería Dragón y Rosas",
-    email: "gmarcantini@gmail.com",
+    phone: "+54 9 351 386 7803",
+    email: "gmarcattini@gmail.com",
     // Usaremos una imagen de la galería como fondo (ejemplo: image_09062e.jpg)
     bgImage: "/images/dr_rs.png", // 🚨 ASEGÚRATE DE USAR TU RUTA REAL 🚨
     hoverColor: "text-amber-400", // Color diferente para el efecto hover
@@ -77,7 +78,7 @@ export default function ContactPage() {
                     <h3 className="text-2xl font-semibold mb-3 drop-shadow">Datos Personales</h3>
                     
                     <div className="flex items-center text-lg drop-shadow">
-                        📞 <span className="ml-3 font-semibold">{artistaData.phone}</span>
+                        📞 <span className="ml-3">{artistaData.phone}</span>
                     </div>
                     <div className="flex items-center text-lg drop-shadow">
                         ✉️ <span className="ml-3">{artistaData.email1}</span>
@@ -97,6 +98,9 @@ export default function ContactPage() {
                     <h3 className="text-2xl font-semibold mb-3 drop-shadow">Contacto y Consultas</h3>
                     
                     <div className="space-y-2">
+                        <div className="flex items-center text-lg drop-shadow">
+                            📞 <span className="ml-3">{galeriaData.phone}</span>
+                        </div>
                         <div className="flex items-center text-lg drop-shadow">
                             ✉️ <span className="ml-3">{galeriaData.email}</span>
                         </div>
