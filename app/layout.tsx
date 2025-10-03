@@ -12,7 +12,7 @@ const primaryFont = Roboto({
 
 export const metadata = {
   title: "bellonimart",
-  description: "Arte y obras de María Teresa Belloni",
+  description: "obras de María Teresa Belloni",
 };
 
 export default function RootLayout({
